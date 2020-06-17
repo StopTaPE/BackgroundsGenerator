@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he">
+    <link rel="stylesheet" href="./scripts/normalize.min.css">
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/modernizr.min.js"></script>
+    <script src="./scripts/scriptMain.js"></script>
+    <script src="./scripts/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="./scripts/jszip.js"></script>
+    <script src="./scripts/jszip.min.js"></script>
+    <script src="./scripts/FileSaver.js"></script>
+    <script src="./scripts/jszip-utils.js"></script>
+    <script src="./scripts/jszip-utils.min.js"></script>
+    <link rel="stylesheet" href="./scripts/styleMain.css">
+    <head>
+        <meta charset="utf-8"/>
+        <title>מחולל קטגוריית מחשבים ואינטרנט</title>
+    </head>
+    <body id="main-body" style="background-color: #404040;">
+        <div id="header" dir="rtl">
+            <br>
+            <br>
+            <br>
+            <img src="./images/logo.png">
+            <h1 style="color: white;">ברוכים הבאים למחולל הרקעים!</h1>
+            <h3 style="color: white;">כל מה שאתם צריכים לעשות זה למלא כמה תיבות והמחולל כבר יעשה את העבודה!</h3>
+            <h4 style="color: white;" >*המחולל נבנה בעיקר למנהלי פורום רקעים, אך מיועד לכולם.</h3>
+            <img src="./images/line.png" width="500">
+        </div>
+        <div id="body">
+        <br>
+        <br>
+        <tr>
+            <td>
+              <input type="text" id="amount" placeholder="הקלד את כמות התמונות שתרצה לייבא" class="halfline remove-outline border-radius-remove border-radius-add">
+              <input type="text" id="searchField" placeholder="הקלד את מילת החיפוש" class="halfline remove-outline border-radius-remove border-radius-add">
+              <button id="previousBtn" class="remove-outline">&lt;</button>
+              <input type="text" id="page" placeholder="הקלד את מספר העמוד" class="halfline remove-outline border-radius-remove border-radius-add">
+              <button id="nextBtn" class="remove-outline">&gt;</button>
+            </td>
+        </tr>
+        <br>
+        <tr>
+          <td>
+            <input type="text" id="backHeight" placeholder="הקלד את אורך הרקע" class="halfline remove-outline border-radius-remove border-radius-add">
+              <input type="text" id="backWidth" placeholder="הקלד את רוחב הרקע" class="halfline remove-outline border-radius-remove border-radius-add">
+          </td>
+      </tr>
+        <br>
+        <tr>
+            <td>
+              <input type="text" dir="rtl" id="apiField" placeholder="הקלד את מפתח ה־API שלך" class="wholeline remove-outline border-radius-remove border-radius-add">
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                <button id="getApiBtn" dir="rtl" class="remove-outline">קבל מפתח API</button>
+                <button id="searchBtn" class="remove-outline">חפש רקעים</button>
+                <br>
+                <br>
+                <button id="downloadBtn" class="remove-outline">הורד</button>
+                <h1 id="downloadStatus" style="color: white; display: none;">Downloading...</h1>
+                <br>
+            </td>
+        </tr>
+        <br>
+    </div>
+    <div id="footer" dir="rtl" style="display: none;">
+        <br>
+        <br>
+        <a style="color: white;">נבנה על ידי</a>
+        <a href="https://www.fxp.co.il/member.php?u=1190738" target="_blank" style="color: white;">Garry Mandelbaum</a>
+    </div>
+    </body>
+</html>
