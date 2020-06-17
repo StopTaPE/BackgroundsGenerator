@@ -79,7 +79,6 @@ $(document).ready(function() {
                 var numberID = 1;
                 var photoID;
                 data.photos.forEach(photo => {
-                    console.log(photo);
                     photoID = document.getElementById("photo" + numberID);
                     if(photoID != null) {
                         document.getElementById("photo" + numberID).src = photo.src.original + "?h=" + $("#backHeight").val() + "&w=" + $("#backWidth").val();
@@ -174,7 +173,6 @@ function pexelsGet() {
             var numberID = 1;
             var photoID;
             data.photos.forEach(photo => {
-                console.log(photo);
                 photoID = document.getElementById("photo" + numberID);
                 if(photoID != null) {
                     document.getElementById("photo" + numberID).src = photo.src.original + "?h=" + $("#backHeight").val() + "&w=" + $("#backWidth").val();
